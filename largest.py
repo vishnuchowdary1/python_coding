@@ -1,7 +1,13 @@
-a = -1
-for i in [10,22,43,24,65]:
-
-    if i > a:
-        a = i
-    print(a,i)
-print(a)
+a = input('enter file name:')
+x = open(a,'r')
+lst = list()
+for line in x:
+    word = line.rstrip().split()
+    print(word)
+    for ele in word:
+        if ele in lst:
+            continue
+        else:
+            lst.append(ele)
+lst.sort()
+print(lst)
