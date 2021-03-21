@@ -3,10 +3,10 @@ text = input('enter the text:')
 line = open(text)
 for a in line :
     words = a.split()
-    print(words)
+    #print(words)
     for word in words :
         counts[word] = counts.get(word,0) + 1
-print(counts)
+#print(counts)
 bigcount = None
 bigword = None
 for k,v in counts.items():

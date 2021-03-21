@@ -3,7 +3,7 @@ x = open(a,'r')
 lst = list()
 for line in x:
     word = line.rstrip().split()
-    print(word)
+    #print(word)
     for ele in word:
         if ele in lst:
             continue

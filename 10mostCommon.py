@@ -9,9 +9,10 @@ for lines in file :
 li = list()
 for k,v in di.items() :
     li.append((v,k))
+#print(type(li))
 
 li = sorted(li, reverse=True)
-print(li[:10])
+#print(li[:10])
 
-for v,k in li[:10] :
+for v,k in li :
     print(k,v)
